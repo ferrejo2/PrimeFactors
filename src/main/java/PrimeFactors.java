@@ -2,10 +2,9 @@ import com.google.common.collect.Lists;
 
 import java.util.List;
 
-public class PrimeFactors {
+class PrimeFactors {
 
-
-    public static List<Integer> of(int n) {
+    static List<Integer> of(int n) {
         List<Integer> factors = Lists.newArrayList();
         for (int divisor = 2; n > 1; divisor++)
             for (; n % divisor == 0; n /= divisor)
